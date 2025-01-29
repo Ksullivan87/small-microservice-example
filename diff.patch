@@ -1,0 +1,11 @@
+--- accountService.js	2025-01-29 10:37:38.398407900 -0500
++++ accountService2.js	2025-01-29 10:37:13.627976100 -0500
+@@ -39,6 +39,8 @@
+     // Typically, some additional logic will exist here; often calling upon some data
+     // service to update or manipulate records in the database.
+ 
++    console.log('Output is here');
++    console.dir(req);
+ 
+     sendResponse(res, {
+         extendedStatus: 'A valid PUT request has been received and processed.',
