@@ -39,6 +39,8 @@ router.put('/', (req, res) => {
     // Typically, some additional logic will exist here; often calling upon some data
     // service to update or manipulate records in the database.
 
+    console.log('Output is here');
+    console.dir(req);
 
     sendResponse(res, {
         extendedStatus: 'A valid PUT request has been received and processed.',
